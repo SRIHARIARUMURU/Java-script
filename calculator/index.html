@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub">
+            <h3>Calculator</h3>
+            <div class="inp">
+                <input class="i1 i" type="text" name="" id="inp_str">
+            </div>
+            <div class="buttons">
+                <div class="r1 r">
+                    <buttons class="btn" onclick="all_clear()">AC</buttons>
+                    <buttons class="btn" onclick="percentage()">%</buttons>
+                    <buttons class="btn" onclick="dele()">x</buttons>
+                    <buttons class="btn" onclick="division()">/</buttons>
+                </div>
+                <div class="r2 r">
+                    <buttons class="btn" onclick="seven()">7</buttons>
+                    <buttons class="btn" onclick="eight()">8</buttons>
+                    <buttons class="btn" onclick="nine()">9</buttons>
+                    <buttons class="btn" onclick="multiply()">*</buttons>
+                </div>
+                <div class="r3 r">
+                    <buttons class="btn" onclick="four()">4</buttons>
+                    <buttons class="btn" onclick="five()">5</buttons>
+                    <buttons class="btn" onclick="six()">6</buttons>
+                    <buttons class="btn" onclick="substraction()">-</buttons>
+                </div>
+                <div class="r4 r">
+                    <buttons class="btn" onclick="one()">1</buttons>
+                    <buttons class="btn" onclick="two()">2</buttons>
+                    <buttons class="btn" onclick="three()">3</buttons>
+                    <buttons class="btn" onclick="addition()">+</buttons>
+                </div>
+                <div class="r5 r">
+                    <buttons class="btn" onclick="twozero()">00</buttons>
+                    <buttons class="btn" onclick="onezero()">0</buttons>
+                    <buttons class="btn" onclick="dot()">.</buttons>
+                    <buttons class="btn" onclick="equalto()">=</buttons>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
