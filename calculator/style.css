@@ -17,8 +17,8 @@
     /* border: 5px solid black; */
     border: none;
     border-radius: 15px;
-    background-color: grey;
-    /* background-color: black; */
+    /* background-color: grey; */
+    background-color: black;
 }
 
 .sub h3{
@@ -33,8 +33,8 @@
     display: flex;
     flex-direction: column;
     border: none;
-    background-color: grey;
-    /* background-color: black; */
+    /* background-color: grey; */
+    background-color: black;
 }
 
 .inp input{
@@ -66,8 +66,8 @@
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: grey;
-    /* background-color: black; */
+    /* background-color: grey; */
+    background-color: black;
 }
 
 .btn{
