@@ -1,81 +1,94 @@
-let inp_str=document.getElementById("inp_str");
+let btn = document.getElementsByClassName("btn")
+let inp_str = document.getElementById("inp_str");
 
-function all_clear(){
-    inp_str.value="";
+for (let b of btn) {
+    b.addEventListener("click", function () {
+        if (b.textContent === "AC") inp_str.value = ""
+        else if (b.textContent === "=") inp_str.value = eval(inp_str.value)
+        else if (b.textContent === "x") inp_str.value = inp_str.value.slice(0,-1)
+        else inp_str.value += b.textContent
+    });
 }
 
-function dele(){
-    inp_str.value=inp_str.value.slice(0, -1);
-}
 
-function addition(){
-    inp_str.value+="+";
-}
+// let inp_str=document.getElementById("inp_str");
 
-function substraction(){
-    inp_str.value+="-";
-}
+// function all_clear(){
+//     inp_str.value="";
+// }
 
-function multiply(){
-    inp_str.value+="*";
-} 
+// function dele(){
+//     inp_str.value=inp_str.value.slice(0, -1);
+// }
 
-function division(){
-    inp_str.value+="/";
-}
+// function addition(){
+//     inp_str.value+="+";
+// }
 
-function percentage(){
-    inp_str.value+="%";
-}
+// function substraction(){
+//     inp_str.value+="-";
+// }
 
-function one(){
-    inp_str.value+="1";
-}
+// function multiply(){
+//     inp_str.value+="*";
+// } 
 
-function two(){
-    inp_str.value+="2";
-}
+// function division(){
+//     inp_str.value+="/";
+// }
 
-function three(){
-    inp_str.value+="3";
-}
+// function percentage(){
+//     inp_str.value+="%";
+// }
 
-function four(){
-    inp_str.value+="4";
-}
+// function one(){
+//     inp_str.value+="1";
+// }
 
-function five(){
-    inp_str.value+="5";
-}
+// function two(){
+//     inp_str.value+="2";
+// }
 
-function six(){
-    inp_str.value+="6";
-}
+// function three(){
+//     inp_str.value+="3";
+// }
 
-function seven(){
-    inp_str.value+="7";
-}
+// function four(){
+//     inp_str.value+="4";
+// }
 
-function eight(){
-    inp_str.value+="8";
-}
+// function five(){
+//     inp_str.value+="5";
+// }
 
-function nine(){
-    inp_str.value+="9";
-}
+// function six(){
+//     inp_str.value+="6";
+// }
 
-function twozero(){
-    inp_str.value+="00";
-}
+// function seven(){
+//     inp_str.value+="7";
+// }
 
-function onezero(){
-    inp_str.value+="0";
-}
+// function eight(){
+//     inp_str.value+="8";
+// }
 
-function dot(){
-    inp_str.value+=".";
-}
+// function nine(){
+//     inp_str.value+="9";
+// }
 
-function equalto(){
-    inp_str.value = eval(inp_str.value);
-}
+// function twozero(){
+//     inp_str.value+="00";
+// }
+
+// function onezero(){
+//     inp_str.value+="0";
+// }
+
+// function dot(){
+//     inp_str.value+=".";
+// }
+
+// function equalto(){
+//     inp_str.value = eval(inp_str.value);
+// }
