@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main" id="main">
+        <div class="sub">
+            <div class="timer" id="t">
+                <p id="d_timer">10:00</p>
+            </div>
+            <div id="instruction-container" class="instructions">
+
+                <ul class="inst">
+                    <h1>Welcome to the Quiz!</h1>
+                    <p class="lead">This quiz is designed to assess your knowledge and understanding of the subject.
+                        Please
+                        read the following instructions carefully before you begin:</p>
+                    <h2 id="heading">Instructions</h2>
+                    <div class="count">
+                        <li>The quiz consists of <strong>20 questions</strong>.</li>
+                        <li>You will have <strong>10 minutes</strong> to complete it.</li>
+                        <li>All questions are <strong>compulsory</strong>.</li>
+                        <li>Each correct answer carries <strong>2 marks</strong>.</li>
+                        <li>Each wrong answer carries<strong>1 negative mark</strong>.</li>
+                        <li>Once submitted, your answers <strong>cannot be changed</strong>.</li>
+                        <li>Do not use books, notes, calculators, or any electronic devices.</li>
+                        <li>Manage your time carefully - about <strong>1 minute per 2 question</strong>.</li>
+                        <li>To qualify, you must score at least <strong>16 out of 40</strong>.</li>
+                    </div>
+                </ul>
+            </div>
+            <div id="question-container" class="q_container">
+                <div class="que_opt_contain">
+                    <h2 id="question">question</h2>
+                    <button class="option">option 1</button>
+                    <button class="option">option 2</button>
+                    <button class="option">option 3</button>
+                    <button class="option">option 4</button>
+
+                </div>
+            </div>
+            <div id="result-container">
+                <h1 id="result">marks :</h1>
+            </div>
+            <div class="sb">
+                <button class="btn" id="startBtn">START</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
