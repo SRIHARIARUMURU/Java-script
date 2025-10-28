@@ -1,6 +1,7 @@
 let sub = document.getElementById("sub");
 let cart_btn = document.getElementById("cart_btn");
 let search=document.getElementById("search");
+let all_products=[]
 
 // ---------------------------------------------------------------------------------------------------------
 
@@ -10,6 +11,7 @@ function fetchdata() {
             return data.json();
         })
         .then(function (data) {
+            all_products=data
             displaydata(data);
         })
         .catch(function (err) {
@@ -21,6 +23,7 @@ function fetchdata() {
 
 let cart = getdata()
 let total_amount_val=total_amount();
+cart_btn.textContent = `Cart (${cart.length})`
 
 // ---------------------------------------------------------------------------------------------------------
 
@@ -104,14 +107,11 @@ function getdata() {
 
 // ---------------------------------------------------------------------------------------------------------
 
-fetchdata();
-
-// ---------------------------------------------------------------------------------------------------------
-
 search.onkeyup=function(event){
     let arr=[];
     if(event.key=='Enter'){
-    for(let i of cart){
+    for(let i of all_products){
+        console.log(i)
         if(i.title.toLowerCase().includes(event.target.value.toLowerCase())){
             arr.push(i);
         }
@@ -130,3 +130,7 @@ search.onkeyup=function(event){
         }
     }
 }
+
+fetchdata();
+
+// ---------------------------------------------------------------------------------------------------------
